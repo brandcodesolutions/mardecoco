@@ -1,3 +1,13 @@
+function enviarWhatsapp(e) {
+  e.preventDefault();
+  const nome = document.getElementById('campo-nome').value;
+  const whatsapp = document.getElementById('campo-whatsapp').value;
+  const cidade = document.getElementById('campo-cidade').value;
+  const estado = document.getElementById('campo-estado').value;
+  const mensagem = `Olá, eu me chamo ${nome}, o meu telefone é ${whatsapp} e eu moro em ${cidade}, ${estado}. Eu quero ser uma revendedora Mar de Coco!`;
+  window.open(`https://wa.me/5518996742364?text=${encodeURIComponent(mensagem)}`, '_blank');
+}
+
 // Animações de fade-in
 const sections = document.querySelectorAll('section');
 

@@ -103,11 +103,19 @@ section.fade-in {
 /* Hero */
 #hero {
   position: relative;
-  background-color: #000;
+  background-color: #fff;
   color: #000;
   text-align: center;
   padding: 120px 0;
   overflow: hidden;
+}
+
+@media (max-width: 1023px) {
+  #hero {
+    margin-top: -60px;
+    padding-top: 20px;
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -124,11 +132,24 @@ section.fade-in {
   z-index: 2;
 }
 
+.hero-mobile-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .hero-mobile-banner {
+    display: none;
+  }
+}
+
 .hero-logo {
   height: 70px;
   margin-bottom: 25px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-logo img {
@@ -154,6 +175,10 @@ section.fade-in {
 @media (min-width: 1024px) {
   #hero {
     text-align: left;
+  }
+
+  .hero-logo {
+    justify-content: flex-start;
   }
 
   #hero .container {
@@ -282,7 +307,7 @@ section.fade-in {
 }
 
 #beneficios2 ul {
-  text-align: center;
+  text-align: left;
 }
 
 #beneficios2 .beneficios-inner {
@@ -298,13 +323,15 @@ section.fade-in {
   #beneficios2 .beneficios-inner {
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    max-width: 70%;
   }
 
   #beneficios2 .beneficios-copy {
-    max-width: 70%;
-    margin-right: auto;
-    padding: 80px 40px 80px 60px;
+    width: 100%;
+    padding: 80px 40px 80px 10px;
   }
 
   #beneficios2 ul {
@@ -314,14 +341,76 @@ section.fade-in {
   }
 }
 
+.cta-button.cta-white {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.cta-button.cta-white:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.beneficios-cta {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.beneficios2-cta {
+  text-align: left;
+  margin-top: 20px;
+}
+
 /* Identificação */
 #identificacao {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+#identificacao h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#identificacao ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.identificacao-rodape {
+  margin-top: 36px;
+  color: #fff;
+}
+
+.identificacao-rodape p {
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#identificacao li {
+  background-color: #fff;
+  color: #000;
+  padding: 16px 32px;
+  width: 100%;
+  max-width: 640px;
+  font-size: 1.1rem;
+  font-weight: bold;
   text-align: center;
 }
 
 /* Comparação */
 #comparacao {
   background-color: #f5f5f5;
+  text-align: center;
+}
+
+#comparacao h2 {
+  line-height: 1.2;
 }
 
 .antes-depois {
@@ -340,10 +429,51 @@ section.fade-in {
 
 .antes h3 {
   color: #ff0000;
+  margin-bottom: 12px;
 }
 
 .depois h3 {
   color: #00ff00;
+  margin-bottom: 12px;
+}
+
+.antes ul,
+.depois ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.antes li {
+  background-color: #fff;
+  color: #000;
+  padding: 14px 28px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 1rem;
+  text-align: center;
+  border-left: 4px solid #ff0000;
+}
+
+.depois li {
+  background-color: #fff;
+  color: #000;
+  padding: 14px 28px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 1rem;
+  text-align: center;
+  border-left: 4px solid #00aa00;
+}
+
+.comparacao-rodape {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.comparacao-rodape p {
+  font-weight: bold;
 }
 
 /* Oportunidade */
@@ -359,6 +489,7 @@ section.fade-in {
 
 #prova-social h2 {
   color: #fff;
+  text-align: center;
 }
 
 .depoimentos {
@@ -374,6 +505,46 @@ section.fade-in {
   text-align: center;
 }
 
+/* FAQ */
+.faq {
+  max-width: 700px;
+  margin: 30px auto 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 8px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  padding: 16px 0;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-item p {
+  padding: 14px 20px;
+  color: #000;
+  background-color: #fff;
+  margin: 0 0 16px;
+}
+
 /* Urgência */
 #urgencia {
   text-align: center;
@@ -383,6 +554,10 @@ section.fade-in {
 /* Formulário */
 #formulario {
   text-align: center;
+}
+
+#formulario h2 {
+  line-height: 1.2;
 }
 
 form {
@@ -398,15 +573,51 @@ input {
   font-size: 1rem;
 }
 
-/* CTA Final */
-#cta-final {
+/* Footer */
+#footer {
   background-color: #000;
   color: #fff;
+  padding: 60px 0;
   text-align: center;
 }
 
-#cta-final h2 {
+.footer-logo img {
+  max-height: 70px;
+  width: auto;
+  margin-bottom: 24px;
+}
+
+.footer-contato {
+  margin-bottom: 30px;
+}
+
+#footer h2 {
   color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-contato p {
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.footer-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin-bottom: 4px;
 }
 
 /* WhatsApp Float */
@@ -434,12 +645,58 @@ input {
 
 /* Responsivo */
 @media (max-width: 768px) {
+  section:not(#hero) {
+    text-align: center;
+  }
+
+  #beneficios::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+  }
+
+  #beneficios2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.65);
+    z-index: 1;
+  }
+
+  #beneficios .beneficios-inner,
+  #beneficios2 .beneficios-inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  .beneficios-cta,
+  .beneficios2-cta,
+  .identificacao-rodape,
+  .comparacao-rodape,
+  .quebra-cta {
+    text-align: center;
+  }
+
   h1 {
-    font-size: 2rem;
+    font-size: 1.35rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #hero .subheadline {
+    font-size: 0.85rem;
   }
 
   .antes-depois {
