@@ -120,6 +120,9 @@
   }
 }
 
+.mobile-only { display: none; }
+@media (max-width: 768px) { .mobile-only { display: block; } }
+
 /* Reset e Base */
 * {
   margin: 0;
@@ -915,7 +918,7 @@ input::placeholder {
 
 .banner-final-content h2 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.8rem;
   line-height: 1.2;
   margin-bottom: 14px;
 }
@@ -1066,8 +1069,8 @@ input::placeholder {
   }
 
   .banner-final-content {
-    left: 74%;
-    width: 40%;
+    left: 72%;
+    width: 50%;
   }
 
   .banner-final-logo {
@@ -1076,7 +1079,7 @@ input::placeholder {
   }
 
   .banner-final-content h2 {
-    font-size: 0.88rem;
+    font-size: 1.3rem;
   }
 
   .banner-final-content p {
@@ -1179,15 +1182,15 @@ input::placeholder {
   }
 
   h1 {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
   }
 
   h2 {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
   }
 
   h3 {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   p {
