@@ -4,31 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAR DE COCO</title>
+  <title>Mar de Coco | Moda Fitness</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-  <!-- Botão Flutuante WhatsApp -->
-  <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="images/logo.png" alt="Mar de Coco">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#quebra-objecao">Produtos</a></li>
+        <li><a href="#beneficios">Fitness</a></li>
+        <li><a href="#identificacao">Oportunidade</a></li>
+        <li><a href="#prova-social">FAQ</a></li>
+        <li><a href="#formulario">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank" class="nav-cta">Seja Revendedora</a>
+    </div>
+  </nav>
+
 
   <img src="images/bannermobile.png" alt="Banner Mar de Coco" class="hero-mobile-banner">
 
   <!-- Hero Section -->
   <section id="hero">
     <div class="container">
-      <div class="hero-logo">
-        <img src="images/logo.png" alt="Logo Mar de Coco">
-      </div>
-      <h1>Torne-se dona do seu próprio negócio de moda fitness e moda praia</h1>
+      <h1>Torne-se dona do seu próprio negócio de moda fitness</h1>
       <p class="subheadline">Descubra como mulheres comuns estão conquistando liberdade financeira com a Mar de Coco,
         lucrando mais de 100% e transformando suas vidas.</p>
       <p class="prova">Já pensou em empreender, mas não sabe por onde começar? A Mar de Coco te entrega um caminho
         pronto, com produtos que vendem sozinhos, suporte dedicado e uma marca consolidada no mercado.</p>
-      <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank" class="cta-button">QUERO SER REVENDEDORA</a>
+      <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank"
+        class="cta-button">QUERO SER REVENDEDORA</a>
     </div>
   </section>
 
@@ -36,21 +50,32 @@
   <section id="quebra-objecao">
     <div class="container">
       <div class="quebra-grid">
-        <div class="quebra-card">
-          <h3>Produtos com venda garantida</h3>
-          <p>Design que agrada, conforto incomparável e qualidade que fideliza.</p>
+        <div class="quebra-item">
+          <img src="images/icone1.png" alt="" class="quebra-icon">
+          <h3>Modelagem que valoriza o corpo</h3>
+          <p>Modelagem que se ajusta ao corpo, realçando as curvas com conforto, sustentação e liberdade de movimento.
+          </p>
         </div>
-        <div class="quebra-card">
-          <h3>Margem de lucro de até 100%</h3>
-          <p>Revenda com alto retorno e investimento acessível.</p>
+        <div class="quebra-item">
+          <img src="images/icone2.png" alt="" class="quebra-icon">
+          <h3>Tecido premium respirável</h3>
+          <p>Material de alta qualidade, leve e respirável, que ajuda a manter o corpo seco e confortável em qualquer
+            atividade.
+          </p>
         </div>
-        <div class="quebra-card">
-          <h3>Atendimento exclusivo e suporte</h3>
-          <p>Você não está sozinha. Nossa equipe te acompanha.</p>
+        <div class="quebra-item">
+          <img src="images/icone3.png" alt="" class="quebra-icon">
+          <h3>Zero transparência e segurança total</h3>
+          <p>Treine com segurança e confiança em todos os movimentos, com tecido de alta cobertura que garante zero
+            transparência.</p>
         </div>
-      </div>
-      <div class="quebra-cta">
-        <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank" class="cta-button">QUERO SER REVENDEDORA</a>
+        <div class="quebra-item">
+          <img src="images/icone4.png" alt="" class="quebra-icon">
+          <h3>Qualidade que você sente</h3>
+          <p>Conforto e qualidade que você percebe desde o primeiro uso, com tecido resistente, toque suave e caimento
+            perfeito.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -59,37 +84,18 @@
   <section id="beneficios">
     <div class="container beneficios-inner">
       <div class="beneficios-copy">
-        <h2>Moda Fitness
+        <h2>Sinta-se bem,<br>
+          dentro e fora<br>
+          do treino
         </h2>
-        <p>Peças de alta qualidade, com excelente acabamento e zero transparência, pensadas para oferecer conforto,
-          segurança e desempenho em qualquer tipo de treino. Desenvolvidas com tecidos tecnológicos, respiráveis e de
-          secagem rápida, proporcionam frescor durante o uso e se adaptam perfeitamente ao corpo. A modelagem valoriza
-          as curvas, enquanto a compressão na medida certa garante sustentação sem abrir mão do conforto.
-
-          Além disso, são peças duráveis, que mantêm a forma, a cor e a qualidade mesmo após várias lavagens. Versáteis
-          e estilosas, acompanham você não só nos treinos, mas também no dia a dia, unindo funcionalidade e estética em
-          cada detalhe.
+        <p>Peças desenvolvidas para acompanhar sua rotina com praticidade e estilo, unindo conforto e funcionalidade em
+          cada detalhe. Com caimento que se adapta ao corpo e acabamento impecável, são ideais para treinos e também
+          para o dia a dia. Versáteis e modernas, entregam liberdade de movimento e um visual sempre alinhado, sem abrir
+          mão da durabilidade.
         </p>
         <div class="beneficios-cta">
-          <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank" class="cta-button cta-white">QUERO SER REVENDEDORA</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Benefícios 2 -->
-  <section id="beneficios2">
-    <div class="container beneficios-inner">
-      <div class="beneficios-copy">
-        <h2>Moda Praia
-        </h2>
-        <p>Peças de moda praia com alta qualidade e excelente acabamento, desenvolvidas para oferecer conforto, segurança e estilo em todos os momentos ao sol. Produzidas com tecidos tecnológicos, de secagem rápida e toque macio, garantem leveza e bem-estar, mesmo nos dias mais quentes. A modelagem é pensada para valorizar o corpo, com caimento perfeito e sustentação na medida certa, proporcionando confiança dentro e fora da água.
-
-Além disso, são peças resistentes ao sol, ao cloro e à água do mar, mantendo a cor viva e a forma mesmo após o uso frequente. Versáteis e cheias de estilo, transitam facilmente da praia para outros momentos do dia, unindo praticidade, durabilidade e elegância em cada detalhe.
-
-        </p>
-        <div class="beneficios2-cta">
-          <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank" class="cta-button">QUERO SER REVENDEDORA</a>
+          <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank"
+            class="cta-button cta-white">QUERO SER REVENDEDORA</a>
         </div>
       </div>
     </div>
@@ -107,8 +113,9 @@ Além disso, são peças resistentes ao sol, ao cloro e à água do mar, mantend
       </ul>
       <div class="identificacao-rodape">
         <p>Últimas vagas para novas revendedoras este mês!</p>
-        <p>Fale com a nossa equipe agora mesmo e comece a lucrar com moda íntima de qualidade:</p>
-        <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank" class="cta-button cta-white">QUERO SER REVENDEDORA</a>
+        <p>Fale com a nossa equipe agora mesmo e comece a lucrar com moda fitness de qualidade:</p>
+        <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank"
+          class="cta-button cta-white">QUERO SER REVENDEDORA</a>
       </div>
     </div>
   </section>
@@ -137,8 +144,37 @@ Além disso, são peças resistentes ao sol, ao cloro e à água do mar, mantend
       </div>
       <div class="comparacao-rodape">
         <p>Últimas vagas para novas revendedoras este mês!</p>
-        <p>Fale com a nossa equipe agora mesmo e comece a lucrar com moda íntima de qualidade:</p>
-        <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank" class="cta-button">QUERO SER REVENDEDORA</a>
+        <p>Fale com a nossa equipe agora mesmo e comece a lucrar com moda fitness de qualidade:</p>
+        <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank"
+          class="cta-button">QUERO SER REVENDEDORA</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quebra de Objeção 2 -->
+  <section id="quebra-objecao2">
+    <div class="container">
+      <div class="quebra-grid">
+        <div class="quebra-item">
+          <img src="images/icone5.png" alt="" class="quebra-icon">
+          <h3>Compra 100% segura</h3>
+          <p>Modelagem que se ajusta ao corpo, realçando as curvas com conforto, sustentação e liberdade de movimento.</p>
+        </div>
+        <div class="quebra-item">
+          <img src="images/icone6.png" alt="" class="quebra-icon">
+          <h3>Envio rápido</h3>
+          <p>Material de alta qualidade, leve e respirável, que ajuda a manter o corpo seco e confortável em qualquer atividade.</p>
+        </div>
+        <div class="quebra-item">
+          <img src="images/icone7.png" alt="" class="quebra-icon">
+          <h3>Troca fácil</h3>
+          <p>Treine com segurança e confiança em todos os movimentos, com tecido de alta cobertura que garante zero transparência.</p>
+        </div>
+        <div class="quebra-item">
+          <img src="images/icone8.png" alt="" class="quebra-icon">
+          <h3>Atendimento especializado</h3>
+          <p>Conforto e qualidade que você percebe desde o primeiro uso, com tecido resistente, toque suave e caimento perfeito.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -165,7 +201,7 @@ Além disso, são peças resistentes ao sol, ao cloro e à água do mar, mantend
           <p>Sim!</p>
         </details>
         <details class="faq-item">
-          <summary>Qual o lucro para revender moda íntima?</summary>
+          <summary>Qual o lucro para revender moda fitnessntima?</summary>
           <p>A lucratividade pode chegar até 100%.</p>
         </details>
         <details class="faq-item">
@@ -179,7 +215,7 @@ Além disso, são peças resistentes ao sol, ao cloro e à água do mar, mantend
   <!-- Formulário -->
   <section id="formulario">
     <div class="container">
-      <h2>Preencha abaixo e entre para o time de mulheres<br>que estão mudando de vida</h2>
+      <h2>Preencha abaixo e entre para o time de mulheres que estão mudando de vida</h2>
       <form id="form-revendedora" onsubmit="enviarWhatsapp(event)">
         <input type="text" id="campo-nome" placeholder="Seu Nome" required>
         <input type="tel" id="campo-whatsapp" placeholder="Seu WhatsApp" required>
@@ -193,17 +229,43 @@ Além disso, são peças resistentes ao sol, ao cloro e à água do mar, mantend
   <!-- Footer -->
   <footer id="footer">
     <div class="container">
-      <div class="footer-logo">
-        <img src="images/logo2.png" alt="Logo Mar de Coco">
-      </div>
-      <div class="footer-contato">
-        <h2>Fale conosco</h2>
-        <p>E-mail: mardecoco@gmail.com</p>
-        <p>Instagram/Facebook: @mardecoco</p>
-      </div>
-      <div class="footer-ctas">
-        <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" target="_blank" class="cta-button cta-white">QUERO SER REVENDEDORA AGORA</a>
-        <a href="https://wa.me/5518996742364?text=Olá,%20quero%20ser%20revendedora%20Mar%20de%20Coco!" class="cta-button whatsapp" target="_blank">WhatsApp</a>
+      <div class="footer-grid">
+
+        <div class="footer-col footer-col-logo">
+          <img src="images/logo2.png" alt="Logo Mar de Coco">
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Links</h4>
+          <ul class="footer-links">
+            <li><a href="#quebra-objecao">Produtos</a></li>
+            <li><a href="#beneficios">Fitness</a></li>
+            <li><a href="#identificacao">Oportunidade</a></li>
+            <li><a href="#prova-social">FAQ</a></li>
+            <li><a href="#formulario">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Atendimento</h4>
+          <ul class="footer-info">
+            <li><i class="fas fa-envelope"></i> mardecoco@gmail.com</li>
+            <li><i class="fab fa-whatsapp"></i> (18) 99674-2364</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Siga-nos</h4>
+          <div class="footer-social">
+            <a href="https://facebook.com/mardecoco" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/mardecoco" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Mar de Coco. Todos os direitos reservados.</p>
