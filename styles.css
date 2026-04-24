@@ -918,9 +918,10 @@ input::placeholder {
 
 .banner-final-content h2 {
   color: #fff;
-  font-size: 2.8rem;
+  font-size: 2rem;
   line-height: 1.2;
   margin-bottom: 14px;
+  white-space: nowrap;
 }
 
 .banner-final-content p {
@@ -1074,22 +1075,25 @@ input::placeholder {
   }
 
   .banner-final-logo {
-    height: 38px;
-    margin-bottom: 4px;
+    height: 28px;
+    margin-bottom: 3px;
   }
 
   .banner-final-content h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .banner-final-content p {
-    font-size: 0.68rem;
-    margin-bottom: 10px;
+    font-size: 0.7rem;
+    margin-bottom: 8px;
+    max-width: 140px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .banner-final-btn {
-    padding: 10px 16px;
-    font-size: 0.68rem;
+    padding: 7px 12px;
+    font-size: 0.58rem;
   }
 }
 
